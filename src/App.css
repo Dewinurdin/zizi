@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+/* .App {
 }
 
 .App-logo {
@@ -11,20 +13,40 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+/* NavBar */
+.navbar {
+  background-color: rgb(247, 202, 132);
+  min-height: 10vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmax); */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.zizi-logo{
+  width: 12vw;
+}
+/* Nav Menu Item */
+/* .ui.secondary.menu .item {
+  font-size: 1.2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: flex-end;
+  padding-right: 5vw;
+} */
+/* Nav Menu Item - Active Item*/
+/* .ui.secondary.menu .active.item {
+  font-weight: 800;
+  font-size: 1.3vw;
+} */
+/* CAROUSEL */
+.carousel-image {
+  /* height: auto; */
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +57,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
