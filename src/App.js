@@ -1,20 +1,21 @@
 import React from 'react';
 
 import Navbar from './components/NavBar';
+import Menu from './pages/Menu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
-import Carousel from './components/Carousel';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
+      <div className="hero-overlay">
         <Navbar />
-      {/* </header> */}
-        <Carousel />
+      </div>
+      <Menu />
     </div>
+
   );
 }
 

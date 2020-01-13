@@ -15,35 +15,103 @@
   }
 } */
 
+  /* OVERLAY */
+  .light-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(225, 225, 225, 0.7);
+  }
+  
+
+.hero-overlay{
+  /* background: url("./images/ramen.png"); */
+   /* The image used */
+   background-image: url("./images/ramen.png");
+
+   min-height: 50vw;
+ 
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+   /* Needed to position the navbar */
+   position: relative;
+}
+
 /* NavBar */
 .navbar {
-  background-color: rgb(247, 202, 132);
+  /* background-color: rgb(247, 202, 132); */
   min-height: 10vh;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
   /* font-size: calc(10px + 2vmax); */
+  position: absolute;
 }
 
 .zizi-logo{
-  width: 12vw;
+  height: 10vw;
 }
 /* Nav Menu Item */
-/* .ui.secondary.menu .item {
-  font-size: 1.2vw;
-  font-weight: 600;
+.navbar-nav {
+  color: white;
   text-transform: uppercase;
-  align-self: flex-end;
-  padding-right: 5vw;
-} */
+}
 /* Nav Menu Item - Active Item*/
-/* .ui.secondary.menu .active.item {
-  font-weight: 800;
-  font-size: 1.3vw;
-} */
+.nav-menu {
+  font-size: 1.5vw;
+  align-self: flex-end;
+  color: black;
+}
 /* CAROUSEL */
 .carousel-image {
   /* height: auto; */
+}
+
+/* MENU CONTAINER */
+.menu-container {
+  background-color: rgb(246, 245, 241);
+}
+
+.section_title h2{
+  color: rgb(44, 48, 51);
+  line-height: 1.25;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  font-family: Lora;
+  letter-spacing: .2rem;
+  font-size: 4vw;
+  text-align: center;
+  padding: 1vw;
+} 
+
+a {
+  font-family: Lora;
+  font-weight: 500;
+  color: #000;
+  font-size: 1.65vw;
+}
+.nav-tabs {
+  justify-content: space-evenly;
+}
+.single_food_item {
+  padding-left: 1.5vw;
+  padding-top: 1vw;
+  /* width: 10vw; */
+}
+.food_img {
+  /* height: 10vw; */
+  width: 13vw;
+  justify-content: flex-start;
+}
+.media_body {
+  background-color: #fff;
+}
+.card-body {
+}
+.price {
 }
 
 /* .App-link {
