@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-class Appetizer extends React.Component {
+class SushiSashimi extends React.Component {
 
   render(){
     const MenuItem = [
@@ -49,4 +49,4 @@ class Appetizer extends React.Component {
   }
 }
 
-export default Appetizer;
+export default SushiSashimi;

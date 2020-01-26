@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+.Main {
+  padding: 0;
+}
 /* .App {
 }
 
@@ -70,8 +73,11 @@
 }
 
 /* MENU CONTAINER */
-.menu-container {
+.section-container {
   background-color: rgb(246, 245, 241);
+}
+.menu-container {
+  margin: 0;
 }
 
 .section_title h2{
@@ -109,10 +115,25 @@ a {
 .media_body {
   background-color: #fff;
 }
-.card-body {
+
+/* MENU TABS */
+.nav-tabs {
 }
-.price {
+
+.center {
+  justify-content: center; 
+  text-align: center;   
 }
+.menu-item, .menu-price {
+  color: #131230;
+  font-family: "Playfair Display",serif;
+  text-transform: capitalize;
+  font-size: 20px !important;
+  font-weight: 700;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 
 /* .App-link {
   color: #61dafb;

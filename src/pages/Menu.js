@@ -8,13 +8,14 @@ import Appetizer from './Appetizer';
 class Menu extends React.Component {
   render (){
     return (
-      <div className="menu-container">
+      <div className="section-container">
         <div className="section_title">
           <h2>ZIZI MENU</h2>
           </div>
-          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+          <div className="menu-container">
+          <Tabs defaultActiveKey="appetizers" id="uncontrolled-tab-example">
             <Tab eventKey="appetizers" title="Appetizers" className="menu-tab">
-            <Appetizer/>
+              <Appetizer/>
             </Tab>
             <Tab eventKey="saladandsoup" title="Salad &amp; Soup" className="menu-tab">
             </Tab>
@@ -33,6 +34,7 @@ class Menu extends React.Component {
             <Tab eventKey="dessert" title="Desserts" className="menu-tab">
             </Tab>
           </Tabs>     
+          </div>
       </div>
     )
   }
