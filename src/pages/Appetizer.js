@@ -1,6 +1,5 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 class Appetizer extends React.Component {
@@ -10,8 +9,7 @@ class Appetizer extends React.Component {
       { name: "Takoyaki", price: "$5" },
       { name: "Vegetable Croquette", price: "$4" },
       { name: "Avocado Bomb", price: "$9" },
-      { name: "Tempura", price: "$8.99" },
-      { name: "Seaweed Salad", price: "$5.99" },
+      { name: "Tempura (Vegetable / Red Snapper / Shrimp & Vegetable)", price: "$8.99" },
       { name: "Spring Roll (3 pcs)", price: "$3" },
       { name: "Chicken Wings", price: "$5" },
       { name: "Black Pepper Tuna", price: "$10" },
@@ -33,7 +31,7 @@ class Appetizer extends React.Component {
     const renderPrice = MenuItem.map((item, index) => <div className="menu-price" key={index}> {item.price} </div> );
 
     return (
-      <div>
+      <div className="menu-page" key={this.props.i}>
         <Row className="center">
           <Col>
               {renderMenuItem}
