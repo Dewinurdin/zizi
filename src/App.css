@@ -58,7 +58,6 @@
 }
 /* Nav Menu Item */
 .navbar-nav {
-  color: white;
   text-transform: uppercase;
 }
 /* Nav Menu Item - Active Item*/
@@ -75,14 +74,13 @@
 /* MENU CONTAINER */
 .section-container {
   background-color: rgb(246, 245, 241);
+  padding: 0;
 }
 .menu-container {
-  /* width: calc(100% - 80px); */
 }
 .menu-page {
   padding: 1rem 0 1rem 0;
 }
-
 .section_title h2{
   color: rgb(44, 48, 51);
   line-height: 1.25;
@@ -102,8 +100,20 @@ a {
   color: #000;
   font-size: 1.65vw;
 }
+.nav-item.nav-link {
+  padding: .5vw;
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 4vw;
+  letter-spacing: .1vw;
+  background-color: black;
+  color: white;
+}
 .nav-tabs {
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.tab-content {
+  /* background-color: white; */
 }
 .single_food_item {
   padding-left: 1.5vw;
@@ -157,19 +167,11 @@ a {
 }
 
 .menu {
-  margin: 15px;
-    /* Center and scale the image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 50vw;
-  min-height: 65vw; 
-  width: 50%;
-  height: 50%;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 .menu-item, .menu-price {
@@ -181,17 +183,3 @@ a {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
-
-
-/* .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

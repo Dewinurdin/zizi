@@ -1,6 +1,7 @@
 import React from 'react';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+import Container from 'react-bootstrap/Container';
 
 import Appetizer from './Appetizer';
 import BentoBox from './BentoBox';
@@ -28,23 +29,23 @@ class Menu extends React.Component {
     const renderMenuTabs =  MenuTabs.map((tab, i) => 
       // console.log(tab.eventkey);
       // console.log(tab.name);
+      // <Nav variant="tabs" defaultActiveKey={tab.eventkey} className="menu-tab"></Nav>
       <Tab eventKey={tab.eventkey} title={tab.name} className="menu-tab" key={i}>
         {tab.component}
       </Tab>
-
     );
     
     return (
-      <div className="section-container">
-        <div className="section_title">
+      <Container className="section-container" fluid>
+        {/* <div className="section_title"> */}
           <h2>ZIZI MENU</h2>
-        </div>
-        <div className="menu-container">
-          <Tabs defaultActiveKey="appetizers" id="uncontrolled-tab">
+        {/* </div> */}
+        {/* <Container className="menu-container" fluid> */}
+          <Tabs defaultActiveKey="appetizers" id="uncontrolled-tab" className="flex-column" fluid>
             {renderMenuTabs}
           </Tabs>     
-        </div>
-      </div>
+        {/* </Container> */}
+      </Container>
     )
   }
 }

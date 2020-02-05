@@ -7,6 +7,7 @@ import Menu from './pages/Menu';
 import Footer from './components/Footer';
 
 import './App.css';
+import './AppMediaQueries.css';
 
 
 function App() {

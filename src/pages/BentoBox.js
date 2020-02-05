@@ -1,5 +1,12 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 
-const BentoBox = () => <div className="menu bento_box"></div>;
+import BentoBoxMenu from '../images/bento_box.png'
+
+const BentoBox = () => (
+  <Container>
+    <img src={BentoBoxMenu} className="menu" alt={BentoBoxMenu}/>;
+  </Container>
+); 
 
 export default BentoBox;
