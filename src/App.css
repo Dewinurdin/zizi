@@ -35,6 +35,7 @@
    background-image: url("./images/ramen.png");
 
    min-height: 50vw;
+   max-width: 100%;
  
    /* Center and scale the image nicely */
    background-position: center;
@@ -43,6 +44,12 @@
    
    /* Needed to position the navbar */
    position: relative;
+}
+.container-fluid {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* NavBar */
@@ -54,7 +61,72 @@
 }
 
 .zizi-logo{
-  height: 10vw;
+  display: block;
+  height: 13.5rem;
+  width: 20rem;
+}
+.about-section {
+}
+.section {
+  padding: 6rem;
+}
+.content {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  padding-bottom: 3rem;
+}
+.align-items-center {
+  align-items: center !important;
+}
+h1 {
+  font-family: 'Lora';
+  color: rgb(44, 48, 51);
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  font-family: "sifonn";
+  letter-spacing: .2rem;
+  font-size: 4rem;
+  padding: 2.5vw 0 2.5vw 0;
+  letter-spacing: .05rem;
+}
+.about {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.5rem;
+  color: #777;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.left-col {
+  margin-top: 12vw;
+  /* right: 5rem; */
+  /* left: 25%; */
+  /* transform: translate(-50%, -50%); */
+}
+.zizi-logo-img {
+  align-content: flex-end;
+  width: 100%;
+  height: auto;
+}
+.menu-section {
+  background-color: #f9f9ff;
+  width: 100%;
+}
+.menu-body {
+  /* padding-top: 4rem; */
+  margin: 0;
 }
 /* Nav Menu Item */
 .navbar-nav {
@@ -71,50 +143,52 @@
   /* height: auto; */
 }
 
-/* MENU CONTAINER */
-.section-container {
-  background-color: rgb(246, 245, 241);
-  padding: 0;
-}
+/* MENU SECTION CONTAINER */
 .menu-container {
+}
+.tab-body {
+  /* height: 50vw; */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .menu-page {
   padding: 1rem 0 1rem 0;
 }
-.section_title h2{
+.section-container h2{
   color: rgb(44, 48, 51);
+  text-align: center;
+  font-style: italic;
   line-height: 1.25;
   font-weight: 700;
   position: relative;
   z-index: 1;
-  font-family: Lora;
+  font-family: "sifonn";
   letter-spacing: .2rem;
-  font-size: 4vw;
-  text-align: center;
-  padding: 1vw;
+  font-size: 4.5rem;
+  padding: 2.5vw 0 2.5vw 0;
 } 
 
 a {
-  font-family: Lora;
-  font-weight: 500;
-  color: #000;
-  font-size: 1.65vw;
-}
-.nav-item.nav-link {
-  padding: .5vw;
-  font-size: 1.8vw;
+  /* font-family: 'Lora'; */
   font-weight: 600;
-  line-height: 4vw;
-  letter-spacing: .1vw;
-  background-color: black;
-  color: white;
+  color: #000;
+  font-size: 1.05vw;
+  letter-spacing: .075vw;
+  line-height: 2.5vw;
+  text-transform: uppercase;
 }
-.nav-tabs {
-  justify-content: center;
+.nav-tabs .nav-link {
+  height: 4.5vw;
+  padding: 1vw;
+  background-color: #f7ca84;
+  color: #fff;
 }
-.tab-content {
-  /* background-color: white; */
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
+
 .single_food_item {
   padding-left: 1.5vw;
   padding-top: 1vw;
@@ -122,7 +196,7 @@ a {
 }
 .food_img {
   /* height: 10vw; */
-  width: 13vw;
+  /* width: 13vw; */
   justify-content: flex-start;
 }
 .media_body {
@@ -130,16 +204,11 @@ a {
 }
 
 /* MENU TABS */
-.nav-tabs {
-}
-.row {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .center {
-  justify-content: center; 
-  text-align: center;   
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .appetizers {
   background-image: url("./images/appetizer.png");
@@ -163,15 +232,26 @@ a {
   background-image: url("./images/sushi_rolls2.png");
 }
 .sushiroll.col, .sushiroll2.col {
-  max-width: 50%;
+  /* max-width: 50%; */
+}
+.col-sm-3 {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #f7ca84;
+}
+.col-sm-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.col-sm-6 {
+  padding-left: 0;
 }
 
 .menu {
   display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
+  /* margin-left: auto; 
+  margin-right: auto;  */
   max-width: 100%;
-  height: auto;
 }
 
 .menu-item, .menu-price {
@@ -180,6 +260,65 @@ a {
   text-transform: capitalize;
   font-size: 20px !important;
   font-weight: 700;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  height: 5vw;
+}
+
+/* MEET THE CHEFS */
+.meet_the_chefs {
+  padding: 6rem;
+  margin-bottom: 3rem;
+}
+.chef-card {
+  border: none;
+}
+.card-img-top {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  vertical-align: middle;
+  border-style: none;
+}
+.card-body {
+  border: 1px solid #e7e7e7;
+  padding: 40px 30px;
+  border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;
+  height: 13rem;
+}
+.card-title {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card-text {
+  font-family: "Lora", serif;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  /* margin-bottom: 0px; */
+  color: #555555;
+  margin-bottom: 2rem;
+}
+.left-card {
+  padding-right: 5rem;
+}
+.right-card {
+  padding-left: 5rem;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  padding: 3rem;
+  bottom: 0;
+  height: auto;
+  background-color: #f7ca8c;
+  color: #fff;
+}
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.footer-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
 }

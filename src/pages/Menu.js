@@ -1,5 +1,10 @@
 import React from 'react';
-import Tabs from 'react-bootstrap/Tabs';
+
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+// import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Container from 'react-bootstrap/Container';
 
@@ -10,6 +15,8 @@ import NoodleRice from './NoodleRice';
 import SushiRolls from './SushiRolls';
 import SushiSashimi from './SushiSashimi';
 import LunchSpecial from './LunchSpecial';
+
+import Logo from '../images/logo.png';
 
 class Menu extends React.Component {
   render (){
@@ -24,27 +31,67 @@ class Menu extends React.Component {
     ];
     // Looping Menu Tabs
     MenuTabs.forEach((tab) => { return tab } );
-
     // Map menu tab then render
     const renderMenuTabs =  MenuTabs.map((tab, i) => 
       // console.log(tab.eventkey);
       // console.log(tab.name);
-      // <Nav variant="tabs" defaultActiveKey={tab.eventkey} className="menu-tab"></Nav>
-      <Tab eventKey={tab.eventkey} title={tab.name} className="menu-tab" key={i}>
-        {tab.component}
-      </Tab>
+      <Nav.Link eventKey={tab.eventkey}  className="menu-tab" key={i}>
+        {tab.name}
+        {/* {tab.component} */}
+      </Nav.Link>
     );
+        // Looping Tab Component
+        MenuTabs.forEach((tab) => { return tab } );
+        // Map menu tab then render
+        const renderComponentTab =  MenuTabs.map((tab, i) => 
+          // console.log(tab.eventkey);
+          // console.log(tab.name);
+          <Tab.Pane eventKey={tab.eventkey} className="component-tab" key={i}>
+            {tab.component}
+        </Tab.Pane>
+        );    
     
     return (
-      <Container className="section-container" fluid>
-        {/* <div className="section_title"> */}
-          <h2>ZIZI MENU</h2>
-        {/* </div> */}
-        {/* <Container className="menu-container" fluid> */}
-          <Tabs defaultActiveKey="appetizers" id="uncontrolled-tab" className="flex-column" fluid>
-            {renderMenuTabs}
-          </Tabs>     
-        {/* </Container> */}
+      <Container className="content" fluid>
+        <Container className="section" fluid>
+          <Row>
+            <Col sm={6} className="left-col">
+              <div className="title">
+                <h1>About ZiZi Ramen & Sushi</h1>
+                <p  className="about"> Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </Col>
+            <Col sm={6} className="d-flex justify-content-end">
+              <Image src={Logo} className="zizi-logo-img" alt="logo"/>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container className=" menu-section section" fluid>
+          <div className="title">
+            <h1 className="d-flex justify-content-center">Our Menu</h1>
+            <p  className="d-flex justify-content-center about"> We Use the freshest ingredients</p>
+          </div>
+          {/* <Container className="d-flex justify-content-center" fluid> */}
+            <Tab.Container defaultActiveKey="appetizers" id="uncontrolled-tab" className="flex-column" fluid>
+              <Row className="tab-body">
+                <Col sm={3}>
+                  <Nav variant="tabs" className="flex-column">
+                    <Nav.Item>
+                      {renderMenuTabs}
+                    </Nav.Item>
+                  </Nav>
+                </Col>
+                <Col sm={9}>
+                <Tab.Content>
+                  {renderComponentTab}
+                </Tab.Content>
+                </Col>
+              </Row>
+            </Tab.Container>   
+          {/* </Container> */}
+        </Container>
+
       </Container>
     )
   }

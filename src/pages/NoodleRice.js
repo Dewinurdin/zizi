@@ -1,12 +1,10 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 import NoodleAndRiceMenu from '../images/rice_noodles.png'
 
 const NoodleRice = () => (
-  <Container>
-    <img src={NoodleAndRiceMenu} className="menu" alt={NoodleAndRiceMenu}/>
-  </Container>
+      <Image src={NoodleAndRiceMenu} className="menu" alt={NoodleAndRiceMenu}/>
 );
 
 export default NoodleRice;

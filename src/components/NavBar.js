@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../images/logo.png';
+// import logo from '../images/logo.png';
 
 class NavBar extends React.Component {
   render () {
@@ -9,11 +9,11 @@ class NavBar extends React.Component {
       <>
       <Navbar collapseOnSelect expand="lg" fixed="top">
         <Navbar.Brand href="#home">
-          <img
+          {/* <img
           src={logo}
           className="d-inline-block align-top zizi-logo"
           alt="zizi logo"
-          />
+          /> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
