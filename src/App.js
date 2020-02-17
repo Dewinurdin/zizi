@@ -7,8 +7,8 @@ import Row from 'react-bootstrap/Row';
 
 import Navbar from './components/NavBar';
 import Menu from './pages/Menu';
-import MeetTheChef from './components/MeetTheChef';
-import Footer from './components/Footer';
+import MeetTheChef from './components/MeetTheChef/MeetTheChef';
+import Footer from './components/Footer/Footer';
 
 import Sin from './images/sin_cropped.jpg';
 import SinBrother from './images/sin_brother.jpg';
@@ -32,16 +32,18 @@ class App extends React.Component {
             <h1 className="d-flex justify-content-center">Meet Our Chef</h1>
           </div>
           <Row>
-            <Col sm={6} className="left-card">
+            <Col sm={6} className="d-flex justify-content-center">
               <MeetTheChef
-                  image={Sin}
-                  chefName="Sin"
+                image={Sin}
+                chefName="Sin"
+                text="Chef Master"
               />
             </Col>
-            <Col sm={6} className="right-card">
+            <Col sm={6} className="d-flex justify-content-center">
               <MeetTheChef
-                  image={SinBrother}
-                  chefName="Sin's Brother"
+                image={SinBrother}
+                chefName="Sin's Brother"
+                text="Chef Master's Brother"
               />
             </Col>
           </Row>

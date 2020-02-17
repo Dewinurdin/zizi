@@ -4,20 +4,30 @@
 .Main {
   padding: 0;
 }
-/* .App {
+h1 {
+  font-family: "sifonn";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.273;
+  padding: .5vw .5vw 1vw 0;
+  color: rgb(44, 48, 51);
+  z-index: 1;
+  letter-spacing: .05rem;
+}
+h5 {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  line-height: 1.5vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  padding: .05vw;
+  letter-spacing: .05vw;
+  color: #777;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
   /* OVERLAY */
   .light-overlay {
     position: absolute;
@@ -44,6 +54,11 @@
    
    /* Needed to position the navbar */
    position: relative;
+}
+.center_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container-fluid {
   margin-right: 0;
@@ -74,51 +89,14 @@
   margin: 0;
   padding: 0;
 }
-.title {
-  padding-bottom: 3rem;
-}
 .align-items-center {
   align-items: center !important;
-}
-h1 {
-  font-family: 'Lora';
-  color: rgb(44, 48, 51);
-  text-align: center;
-  line-height: 1.25;
-  font-weight: 700;
-  position: relative;
-  z-index: 1;
-  font-family: "sifonn";
-  letter-spacing: .2rem;
-  font-size: 4rem;
-  padding: 2.5vw 0 2.5vw 0;
-  letter-spacing: .05rem;
-}
-.about {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-size: 1.5rem;
-  color: #777;
 }
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.left-col {
-  margin-top: 12vw;
-  /* right: 5rem; */
-  /* left: 25%; */
-  /* transform: translate(-50%, -50%); */
-}
-.zizi-logo-img {
-  align-content: flex-end;
-  width: 100%;
-  height: auto;
 }
 .menu-section {
   background-color: #f9f9ff;
@@ -265,11 +243,8 @@ a {
 
 /* MEET THE CHEFS */
 .meet_the_chefs {
-  padding: 6rem;
-  margin-bottom: 3rem;
-}
-.chef-card {
-  border: none;
+  padding: 6vw 6rem;
+  /* margin-bottom: 3rem; */
 }
 .card-img-top {
   border-top-left-radius: 3rem;
@@ -285,40 +260,16 @@ a {
 }
 .card-title {
   font-family: "Lora", serif;
-  font-size: 2rem;
-  font-weight: 700;
+  margin-bottom: 1vw;
+  font-size: 1.75vw;
+  font-weight: 600;
+  line-height: 1.5vw;
 }
 .card-text {
   font-family: "Lora", serif;
-  line-height: 1.7;
+  line-height: 1.7vw;
   font-size: 1.4rem;
-  /* margin-bottom: 0px; */
   color: #555555;
-  margin-bottom: 2rem;
-}
-.left-card {
-  padding-right: 5rem;
-}
-.right-card {
-  padding-left: 5rem;
+  margin-bottom: 2vw;
 }
 
-
-
-/* FOOTER */
-
-.footer {
-  padding: 3rem;
-  bottom: 0;
-  height: auto;
-  background-color: #f7ca8c;
-  color: #fff;
-}
-.footer-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-.footer-subtitle {
-  font-size: 1.5rem;
-  font-weight: 500;
-}

@@ -1,8 +1,9 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
-import Logo from '../images/zizi_logo.png';
+import Logo from '../../images/zizi_logo.png';
+
+import './Footer.css';
 
 
 const Footer = () => (

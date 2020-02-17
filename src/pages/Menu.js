@@ -15,6 +15,7 @@ import NoodleRice from './NoodleRice';
 import SushiRolls from './SushiRolls';
 import SushiSashimi from './SushiSashimi';
 import LunchSpecial from './LunchSpecial';
+import About from '../components/About/About';
 
 import Logo from '../images/logo.png';
 
@@ -55,11 +56,8 @@ class Menu extends React.Component {
       <Container className="content" fluid>
         <Container className="section" fluid>
           <Row>
-            <Col sm={6} className="left-col">
-              <div className="title">
-                <h1>About ZiZi Ramen & Sushi</h1>
-                <p  className="about"> Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
+            <Col sm={6}>
+              <About />
             </Col>
             <Col sm={6} className="d-flex justify-content-end">
               <Image src={Logo} className="zizi-logo-img" alt="logo"/>
@@ -70,7 +68,7 @@ class Menu extends React.Component {
         <Container className=" menu-section section" fluid>
           <div className="title">
             <h1 className="d-flex justify-content-center">Our Menu</h1>
-            <p  className="d-flex justify-content-center about"> We Use the freshest ingredients</p>
+            <p  className="d-flex justify-content-center"> We Use the freshest ingredients</p>
           </div>
           {/* <Container className="d-flex justify-content-center" fluid> */}
             <Tab.Container defaultActiveKey="appetizers" id="uncontrolled-tab" className="flex-column" fluid>

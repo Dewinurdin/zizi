@@ -1,0 +1,21 @@
+/* FOOTER */
+.footer {
+  padding: 2vw;
+  bottom: 0;
+  height: auto;
+  background-color: #f7ca8c;
+  color: #fff;
+}
+.footer-title {
+  color: #424242;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+.footer-subtitle {
+  color: #616161;
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 2.25vw;
+  margin-bottom: 0;
+}
