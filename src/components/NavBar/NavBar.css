@@ -1,0 +1,11 @@
+.nav-tabs .nav-link {
+  height: 4.5vw;
+  padding: 1vw;
+  background-color: #f7ca84;
+  color: #fff;
+}
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}

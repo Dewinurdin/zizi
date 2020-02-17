@@ -6,7 +6,7 @@
 }
 h1 {
   font-family: "sifonn";
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.273;
   padding: .5vw .5vw 1vw 0;
@@ -25,7 +25,7 @@ p {
   padding: .05vw;
   letter-spacing: .05vw;
   color: #777;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-bottom: 3rem;
 }
   /* OVERLAY */
@@ -154,17 +154,6 @@ a {
   letter-spacing: .075vw;
   line-height: 2.5vw;
   text-transform: uppercase;
-}
-.nav-tabs .nav-link {
-  height: 4.5vw;
-  padding: 1vw;
-  background-color: #f7ca84;
-  color: #fff;
-}
-.nav-tabs .nav-link.active {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
 }
 
 .single_food_item {

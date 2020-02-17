@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import Navbar from './components/NavBar';
+import Navbar from './components/NavBar/NavBar';
 import Menu from './pages/Menu';
 import MeetTheChef from './components/MeetTheChef/MeetTheChef';
 import Footer from './components/Footer/Footer';

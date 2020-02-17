@@ -3,6 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 // import logo from '../images/logo.png';
 
+import './NavBar.css';
+
 class NavBar extends React.Component {
   render () {
     return (
