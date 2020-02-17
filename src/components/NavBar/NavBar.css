@@ -1,8 +1,29 @@
+.navbar {
+  overflow: hidden;
+  /* background-color: #eee; */
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+.nav-menu {
+}
+.navbar-nav {
+  text-transform: uppercase;
+}
+a.nav-link {
+  /* align-self: center; */
+}
+
 .nav-tabs .nav-link {
   height: 4.5vw;
   padding: 1vw;
-  background-color: #f7ca84;
-  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #f5f5f5;
+  font-size: 1.25vw;
 }
 .nav-tabs .nav-link.active {
   color: #495057;

@@ -22,8 +22,8 @@ class App extends React.Component {
     return (
       <Container className="Main" fluid>
         <div className="App">
+          <Navbar />
           <div className="hero-overlay">
-            <Navbar />
           </div>
           <Menu />
         </div>

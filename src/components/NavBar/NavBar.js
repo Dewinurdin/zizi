@@ -19,10 +19,10 @@ class NavBar extends React.Component {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link className="nav-menu" href="#menu" style={{paddingRight: '20%'}}> Menu</Nav.Link>
-            <Nav.Link className="nav-menu" href="#gallery" style={{paddingRight: '20%'}}> Gallery</Nav.Link>
-            <Nav.Link className="nav-menu" href="#location">Visit Us</Nav.Link>
+          <Nav className="mr-auto ml-auto">
+            <Nav.Link className="" href="#menu"> Menu</Nav.Link>
+            <Nav.Link className="" href="#gallery"> Gallery</Nav.Link>
+            <Nav.Link className="" href="#location">Visit Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
