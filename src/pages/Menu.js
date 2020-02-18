@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 // import Tabs from 'react-bootstrap/Tabs';
@@ -15,9 +14,6 @@ import NoodleRice from './NoodleRice';
 import SushiRolls from './SushiRolls';
 import SushiSashimi from './SushiSashimi';
 import LunchSpecial from './LunchSpecial';
-import About from '../components/About/About';
-
-import Logo from '../images/logo.png';
 
 class Menu extends React.Component {
   render (){
@@ -54,18 +50,7 @@ class Menu extends React.Component {
     
     return (
       <Container className="content" fluid>
-        <Container className="section" fluid>
-          <Row>
-            <Col sm={6}>
-              <About />
-            </Col>
-            <Col sm={6} className="d-flex justify-content-end">
-              <Image src={Logo} className="zizi-logo-img" alt="logo"/>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container className=" menu-section section" fluid>
+        <Container className="menu-section section" fluid>
           <div className="title">
             <h1 className="d-flex justify-content-center">Our Menu</h1>
             <p  className="d-flex justify-content-center"> We Use the freshest ingredients</p>

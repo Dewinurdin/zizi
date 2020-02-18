@@ -9,7 +9,7 @@ h1 {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.273;
-  padding: .5vw .5vw 1vw 0;
+  padding: 2vw .5vw 1vw 0;
   color: rgb(44, 48, 51);
   z-index: 1;
   letter-spacing: .05rem;
@@ -26,7 +26,6 @@ p {
   letter-spacing: .05vw;
   color: #777;
   font-size: 1.15rem;
-  margin-bottom: 3rem;
 }
   /* OVERLAY */
   .light-overlay {
@@ -80,11 +79,11 @@ p {
   height: 13.5rem;
   width: 20rem;
 }
-.about-section {
+.section {
+  background-color: #FAFAFA;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
-/* .section {
-  padding: 6rem;
-} */
 /* .content {
   margin: 0;
   padding: 0;
@@ -201,7 +200,8 @@ a {
   padding-right: 0;
 }
 .col-sm-6 {
-  padding-left: 0;
+  margin: 1vw 0;
+  /* margin: 0 1vw; */
 }
 
 .menu {
@@ -221,21 +221,8 @@ a {
 }
 
 /* MEET THE CHEFS */
-.meet_the_chefs {
-  padding: 6vw 6rem;
-  /* margin-bottom: 3rem; */
-}
 .card-img-top {
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
   vertical-align: middle;
-  border-style: none;
-}
-.card-body {
-  border: 1px solid #e7e7e7;
-  padding: 40px 30px;
-  border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;
-  height: 13rem;
 }
 .card-title {
   font-family: "Lora", serif;
@@ -250,5 +237,11 @@ a {
   font-size: 1.4rem;
   color: #555555;
   margin-bottom: 2vw;
+}
+.meet_the_chefs {
+  padding: 1vw;
+}
+.chef_row {
+  margin-top: 3vw;
 }
 

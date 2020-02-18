@@ -1,11 +1,21 @@
 .banner_text {
+  text-align: center;
   margin-inline-end: 1vw;
-  padding: 2vw;
+  padding: 3vw;
 }
 .banner_text h5 {
   font-family: "Lora", serif;
   color: #ff6426;
   font-style: italic;
+}
+.banner_text p {
+  padding-right: 10em;
+  padding-left: 10em;
+}
+.ramen-img {
+  align-content: flex-end;
+  width: 30vw;
+  height: auto;
 }
 
 .zizi-logo-img {

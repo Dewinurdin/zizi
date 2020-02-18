@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import Navbar from './components/NavBar/NavBar';
+import About from './components/About/About';
 import Menu from './pages/Menu';
 import MeetTheChef from './components/MeetTheChef/MeetTheChef';
 import Footer from './components/Footer/Footer';
@@ -25,13 +26,14 @@ class App extends React.Component {
           <Navbar />
           <div className="hero-overlay">
           </div>
+            <About />
           <Menu />
         </div>
-        <Container className="meet_the_chefs" fluid>
+        <Container className="meet_the_chefs section" fluid>
           <div className="title">
-            <h1 className="d-flex justify-content-center">Meet Our Chef</h1>
+            <h1 className="d-flex justify-content-center">Meet Our Chefs</h1>
           </div>
-          <Row>
+          <Row className="chef_row">
             <Col sm={6} className="d-flex justify-content-center">
               <MeetTheChef
                 image={Sin}
