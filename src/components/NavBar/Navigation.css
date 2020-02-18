@@ -1,31 +1,50 @@
-/* FOOTER */
-.zizi-logo{
-  display: block;
-  height: 13.5rem;
-  width: 20rem;
+.navbar {
+  position: fixed;
+  /* overflow: hidden; */
+  transition: 0.4s;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
-.footer {
-  padding: 2vw 0 0 0;
-  bottom: 0;
-  height: auto;
-  background-color: #f7cb85;
-  color: #fff;
+.navbar-brand {
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-transform: none;
+  font-size: 2.75vw;
 }
-.footer-title {
-  color: #424242;
-  font-size: 1.5vw;
-  font-weight: 800;
-  line-height: 2.25vw;
-  letter-spacing: .1vw;
+.navbar-dark .navbar-brand {
+  color: #ff6426;
 }
-.footer-subtitle {
-  color: #616161;
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.7);
+}
+.navbar-overlay--active {
+  background-color: rgb(3,13,14);
+  background-color: rgba(3,13,14, 0.9);
+}
+.navbar-nav {
+  text-transform: uppercase;
+}
+a.nav-link {
+  margin: 0 4vw;
+}
+/* a.nav-link:hover { */
+  /* color: red; */
+  /* background-color: #fff; */
+  /* border-color: #dee2e6 #dee2e6 #fff; */
+/* } */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f7ca84;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #f5f5f5;
   font-size: 1vw;
-  font-weight: 500;
-  line-height: 2vw;
-  margin-bottom: 0;
-  letter-spacing: .07vw;
+  font-weight: 800;
 }
+
+/* MEDIA QUERIES  */
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
@@ -33,23 +52,29 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .zizi-logo{
-      height: 9.5vw;
-      width: 12vw;
-      padding-bottom: 0;
-    }  
-    .footer-title {
-      font-size: 1.75vw;
-      font-weight: 800;
-      line-height: 2vw;
-      margin-bottom: 1vw;
-    }   
-    .footer-subtitle {
-      font-size: 1vw;
-      line-height: 2vw;
-      margin-bottom: 0;
-      letter-spacing: .07vw;
-    }       
+  .navbar {
+    min-height: 7vh;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+    background-color: rgb(3,13,14);
+    background-color: rgba(3,13,14, 0.9);
+  }
+  .navbar-toggler {
+    padding: .5vw .5vw;
+    margin-right: 2vw;
+    font-size: 3vw;
+    line-height: 1;
+    border-radius: .75vw;
+    border: 1px solid white;
+  }
+  .navbar-brand {
+    font-size: 2.75vw;
+  }
+  
+
 }
 
 /* Portrait */
@@ -131,6 +156,14 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      background-color: rgb(3,13,14);
+      background-color: rgba(3,13,14, 0.9);
+      width: 50%;
+    }  
 
 }
 

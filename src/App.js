@@ -5,9 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import Navbar from './components/NavBar/NavBar';
+import Navigation from './components/NavBar/Navigation';
+
+// import Navbar from './components/NavBar/NavBar';
 import About from './components/About/About';
-import Menu from './pages/Menu';
+import Menu from './pages/Menu/Menu';
 import MeetTheChef from './components/MeetTheChef/MeetTheChef';
 import Footer from './components/Footer/Footer';
 
@@ -22,30 +24,28 @@ class App extends React.Component {
     console.log(this.props.image)
     return (
       <Container className="Main" fluid>
-        <div className="App">
-          <Navbar />
-          <div className="hero-overlay">
-          </div>
-            <About />
-          <Menu />
+        <Navigation />
+        <div className="hero-overlay">
         </div>
+        <About />
+        <Menu />
         <Container className="meet_the_chefs section" fluid>
           <div className="title">
             <h1 className="d-flex justify-content-center">Meet Our Chefs</h1>
           </div>
           <Row className="chef_row">
-            <Col sm={6} className="d-flex justify-content-center">
+            <Col xs={6} className="d-flex justify-content-center">
               <MeetTheChef
                 image={Sin}
                 chefName="Sin"
                 text="Chef Master"
               />
             </Col>
-            <Col sm={6} className="d-flex justify-content-center">
+            <Col xs={6} className="d-flex justify-content-center">
               <MeetTheChef
                 image={SinBrother}
                 chefName="Sin's Brother"
-                text="Chef Master's Brother"
+                text="Chef Master"
               />
             </Col>
           </Row>
