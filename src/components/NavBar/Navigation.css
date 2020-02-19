@@ -54,13 +54,19 @@
   .navbar-toggler {
     padding: .5vw .5vw;
     margin-right: 2vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
     line-height: 1;
     border-radius: .75vw;
     border: 1px solid white;
   }
   .navbar-brand {
-    font-size: 3.75vw;
+    font-size: 5vw;
+  }
+  .menu-link {
+    font-size: 4vw;
+    padding: 2vw;
+    line-height: 8vw;
+    margin-left: 2vw;
   }
 }
 
@@ -147,12 +153,6 @@
       padding: 2vw;
       /* background-color: rgb(3,13,14); */
       background-color: rgba(3,13,14, 0.9);
-    }
-    .menu-link {
-      font-size: 2.75vw;
-      padding: 2vw;
-      line-height: 4.5vw;
-      margin-left: 1vw;
     }
     .navbar-nav .nav-link {
   }

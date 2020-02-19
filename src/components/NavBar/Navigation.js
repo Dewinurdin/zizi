@@ -43,7 +43,7 @@ class Navigation extends React.Component {
             <Nav.Link className="menu-link" href="#link">Order</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar> 
     );
   }
 };

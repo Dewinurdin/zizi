@@ -8,7 +8,7 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 7vw;
       padding: 2vw .5vw 1vw 0;
       letter-spacing: .02rem;
     }
@@ -22,7 +22,7 @@
       padding: 0;
       letter-spacing: .01vw;
       color: #777;
-      font-size: .7rem;
+      font-size: 2.95vw;
       margin-bottom: 2vw;
     }
     a {

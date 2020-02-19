@@ -2,7 +2,6 @@
 .zizi-logo{
   height: 12vw;
   width: 16vw;
-
 }
 .footer {
   /* padding: 2vw 0 0 0; */
@@ -59,23 +58,35 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    .footer {
+      padding: 2vw;
+    }
     .zizi-logo{
-      height: auto;
-      width: 12vw;
+      height: 22vw;
+      width: 26vw;
+
+      /* height: auto;
+      width: 12vw; */
       padding-bottom: 0;
     }  
     .footer-title {
-      font-size: 1.75vw;
+      font-size: 4vw;
       font-weight: 800;
-      line-height: 2vw;
+      line-height: 5vw;
       margin-bottom: 1vw;
     }   
     .footer-subtitle {
-      font-size: 1vw;
-      line-height: 2vw;
+      font-size: 3vw;
+      line-height: 4.5vw;
       margin-bottom: 0;
       letter-spacing: .07vw;
     }       
+    .copyright, .developer {
+      font-size: 2vw;
+    }
+    .dev {
+      text-align: left;
+    }
 }
 
 /* Portrait */
@@ -129,6 +140,10 @@
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+    /* .zizi-logo{
+      height: 22vw;
+      width: 26vw;
+    }     */
 
 }
 
