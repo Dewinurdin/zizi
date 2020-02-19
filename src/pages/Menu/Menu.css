@@ -46,8 +46,11 @@
       padding: .3rem 0.5rem;
     }
     a.nav-link {
-      margin: 0 4vw;
+      /* margin: 0 0; */
     }    
+    .menu-tab {
+      font-size: 2vw;
+    }
     .col-3 {
       padding-right: 0;
       padding-left: 0;

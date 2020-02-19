@@ -147,14 +147,13 @@
       background-color: rgb(3,13,14);
       background-color: rgba(3,13,14, 0.9);
     }
-    a.nav-link {
+    .menu-link {
       font-size: 2.75vw;
       padding: 2vw;
       line-height: 3.5vw;
+      margin-left: 1vw;
     }
     .navbar-nav .nav-link {
-      margin-left: 1vw;
-      padding: 3vw;
   }
   
 
