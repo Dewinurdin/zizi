@@ -60,14 +60,14 @@ class Menu extends React.Component {
           {/* <Container className="d-flex justify-content-center" fluid> */}
             <Tab.Container defaultActiveKey="appetizers" id="uncontrolled-tab" className="flex-column" fluid>
               <Row className="tab-body">
-                <Col xs={2}>
+                <Col xs={3}>
                   <Nav variant="tabs" className="flex-column">
                     <Nav.Item>
                       {renderMenuTabs}
                     </Nav.Item>
                   </Nav>
                 </Col>
-                <Col xs={10}>
+                <Col xs={9}>
                 <Tab.Content>
                   {renderComponentTab}
                 </Tab.Content>

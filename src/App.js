@@ -44,7 +44,7 @@ class App extends React.Component {
             <Col xs={6} className="d-flex justify-content-center">
               <MeetTheChef
                 image={SinBrother}
-                chefName="Sin's Brother"
+                chefName="Seng"
                 text="Chef Master"
               />
             </Col>

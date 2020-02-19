@@ -55,23 +55,16 @@ a.nav-link {
   .navbar {
     min-height: 7vh;
   }
-  .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 0;
-    align-items: center;
-    background-color: rgb(3,13,14);
-    background-color: rgba(3,13,14, 0.9);
-  }
   .navbar-toggler {
     padding: .5vw .5vw;
     margin-right: 2vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 1;
     border-radius: .75vw;
     border: 1px solid white;
   }
   .navbar-brand {
-    font-size: 2.75vw;
+    font-size: 3.75vw;
   }
   
 
@@ -157,13 +150,19 @@ a.nav-link {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
-      align-items: center;
       background-color: rgb(3,13,14);
       background-color: rgba(3,13,14, 0.9);
-      width: 50%;
-    }  
+    }
+    a.nav-link {
+      font-size: 2.75vw;
+      padding: 2vw;
+      line-height: 3.5vw;
+    }
+    .navbar-nav .nav-link {
+      margin-left: 1vw;
+      padding: 3vw;
+  }
+  
 
 }
 
