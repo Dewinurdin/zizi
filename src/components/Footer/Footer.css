@@ -59,30 +59,33 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .footer {
-      padding: 2vw;
+      padding: 2vw 4vw;
     }
     .zizi-logo{
-      height: 22vw;
-      width: 26vw;
+      height: 32vw;
+      width: 40vw;
       padding-bottom: 0;
     }  
     .footer-title {
-      font-size: 4vw;
+      font-size: 6vw;
       font-weight: 800;
-      line-height: 5vw;
-      margin-bottom: 1vw;
+      line-height: 6vw;
+      margin-bottom: 2vw;
     }   
     .footer-subtitle {
-      font-size: 3vw;
-      line-height: 4.5vw;
+      font-size: 4vw;
+      line-height: 6vw;
       margin-bottom: 0;
       letter-spacing: .07vw;
     }       
-    .copyright, .developer {
+    .copyright, .developer, a.dn {
       font-size: 2vw;
     }
     .dev {
       text-align: left;
+    }
+    a.dn {
+
     }
 }
 
