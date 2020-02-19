@@ -144,13 +144,14 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .navbar-collapse {
-      background-color: rgb(3,13,14);
+      padding: 2vw;
+      /* background-color: rgb(3,13,14); */
       background-color: rgba(3,13,14, 0.9);
     }
     .menu-link {
       font-size: 2.75vw;
       padding: 2vw;
-      line-height: 3.5vw;
+      line-height: 4.5vw;
       margin-left: 1vw;
     }
     .navbar-nav .nav-link {
