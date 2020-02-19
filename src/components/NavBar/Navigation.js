@@ -36,11 +36,11 @@ class Navigation extends React.Component {
         <Navbar.Brand href="/">ZiZi Ramen & Sushi</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto ml-auto" >
-            <Nav.Link href="#home">About</Nav.Link>
-            <Nav.Link href="#link">Menu</Nav.Link>
-            <Nav.Link href="#link">Visit</Nav.Link>
-            <Nav.Link href="#link">Order</Nav.Link>
+          <Nav className="ml-auto" >
+            <Nav.Link className="menu-link" href="#home">About</Nav.Link>
+            <Nav.Link className="menu-link" href="#link">Menu</Nav.Link>
+            <Nav.Link className="menu-link" href="#link">Visit</Nav.Link>
+            <Nav.Link className="menu-link" href="#link">Order</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
