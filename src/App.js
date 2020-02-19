@@ -34,14 +34,14 @@ class App extends React.Component {
             <h1 className="d-flex justify-content-center">Meet Our Chefs</h1>
           </div>
           <Row className="chef_row">
-            <Col xs={6} className="d-flex justify-content-center">
+            <Col xs={12} sm={6} className="d-flex justify-content-center">
               <MeetTheChef
                 image={Sin}
                 chefName="Sin"
                 text="Chef Master"
               />
             </Col>
-            <Col xs={6} className="d-flex justify-content-center">
+            <Col xs={12} sm={6} className="d-flex justify-content-center">
               <MeetTheChef
                 image={SinBrother}
                 chefName="Seng"

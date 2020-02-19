@@ -37,10 +37,10 @@ class Navigation extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto" >
-            <Nav.Link className="menu-link" href="#home">About</Nav.Link>
-            <Nav.Link className="menu-link" href="#link">Menu</Nav.Link>
-            <Nav.Link className="menu-link" href="#link">Visit</Nav.Link>
-            <Nav.Link className="menu-link" href="#link">Order</Nav.Link>
+            <Nav.Link className="menu-link" href="#about">About</Nav.Link>
+            <Nav.Link className="menu-link" href="#menu">Menu</Nav.Link>
+            <Nav.Link className="menu-link" href="#visit">Visit</Nav.Link>
+            <Nav.Link className="menu-link" href="#order">Order</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar> 
