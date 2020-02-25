@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-import SushiRollsMenu1 from '../images/sushi_rolls.png';
+import SushiRollsMenu1 from '../images/sushi_roll1.png';
 import SushiRollsMenu2 from '../images/sushi_rolls2.png';
 
 const SushiRolls = () => (
