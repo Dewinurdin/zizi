@@ -51,7 +51,7 @@ class Menu extends React.Component {
         );    
     
     return (
-      <Container className="content" fluid>
+      <Container className="content" id="menu" fluid>
         <Container className="menu-section section" fluid>
           <div className="title">
             <h1 className="d-flex justify-content-center">Our Menu</h1>

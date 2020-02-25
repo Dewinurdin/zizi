@@ -5,7 +5,7 @@ import ramen_img from '../../images/tonkatsu_ramen.png';
 import './About.css';
 
 const About = () => (
-  <Container className="banner_text section" fluid>
+  <Container className="banner_text section" id="about" fluid>
     <h1>Deliciousness jumping into the mouth</h1>
     <p> ZiZi Ramen & Sushi is a family owned business that prides itself on serving quality food. </p>
     <p>Our chefs have worked in the sushi and ramen business for over 10 years. </p>

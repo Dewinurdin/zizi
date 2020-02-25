@@ -11,7 +11,7 @@ const getYear = d.getFullYear();
 
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" id="visit">
     <Row>
       <Col xs={12} sm={4} className="footer-col">
         <p className="footer-title">Contact Us</p>
