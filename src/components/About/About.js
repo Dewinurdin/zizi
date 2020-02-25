@@ -7,7 +7,10 @@ import './About.css';
 const About = () => (
   <Container className="banner_text section" fluid>
     <h1>Deliciousness jumping into the mouth</h1>
-    <p> Write Something about Zizi. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p> ZiZi Ramen & Sushi is a family owned business that prides itself on serving quality food. </p>
+    <p>Our chefs have worked in the sushi and ramen business for over 10 years. </p>
+    <p>After years of experience in Japanese cuisine, ZiZi Ramen & Sushi hopes to bring a taste of Japan in your area. </p>
+    <p>Join us in experiencing a new taste that will leave you wanting more! </p>
     <img src={ramen_img} className="ramen-img" alt="Ramen"/>
   </Container>
 );
