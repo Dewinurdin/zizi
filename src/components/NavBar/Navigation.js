@@ -13,7 +13,7 @@ class Navigation extends React.Component {
   }
   componentDidMount() {
     window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       // this by default will return a Boolean
       const isTop = window.scrollY < 1; 
       // if isTop is Not true

@@ -21,7 +21,6 @@ import './AppMediaQueries.css';
 
 class App extends React.Component {
   render () {
-    console.log(this.props.image)
     return (
       <Container className="Main" fluid>
         <Navigation />
